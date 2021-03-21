@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE-edge">
+    <meta name= "viewport" content="width= device-width,initial-scale = 1">
+
+    <title>single item product</title>
+    <!-----------------------------------------------stylesheets----------------------------------->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="stylep.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-----------------------------------------------stylesheets----------------------------------->
+
+</head>
+<body>
+
+    
+<div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar ">
+      <!-- Search form -->
+      <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+      <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+   
+      <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+
+      <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+        <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+          <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+       
+        
+          <div style="display: flex; margin-bottom: .5cm;">
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+
+          
+          </div>
+          <div style="margin-left: 1cm;">
+          <a class="dropdown-item" href="Settings.html">My Account</a>
+          <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+          <a class="dropdown-item" href="payment.html">My Orders</a>
+          <a class="dropdown-item" href="register_order.html">Track Order </a>
+          <a class="dropdown-item" href="payment.html">Order Review</a>
+        </div>
+          <div style="text-align: center;">
+            <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+          </div>
+
+      </button>
+      
+    
+        <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+      <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+  </nav>
+  
+</div>
+
+
+
+<div class="content"  style=" position: relative; background-color: #2E72FF;">
+
+      <div class="items" style="  display: flex; justify-content: center;">
+        <div class="dropdown">
+           <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+               <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">TV, Video & Audio</a>
+                <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                <a href="#">Computers & Accesories</a>
+                <a href="#">Softwares</a>
+                <a href="#">Speakers & Accesories</a>
+              </div>
+        </div>
+        
+            <div class="dropdown">
+              <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Cleaning Supplies</a>
+                <a href="#">Dinnnig</a>
+                <a href="#">Kitchen Appiance</a>
+                <a href="#">Interior Decoration</a> 
+                <a href="#">Tools & Hardware</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Vegetables</a>
+                <a href="#">Fruits</a>
+                <a href="#">Meat & Fish</a>
+                <a href="#">Snacks</a>
+                <a href="#">Sweets</a>
+                <a href="#">Others</a>
+              </div>
+            </div>
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Sports & Outdoors </a>
+                <a href="#">Medical Aids & Supplies</a>
+                <a href="#">Fitness Equipments</a>
+                <a href="#">Personal care Appliances</a>
+                <a href="#">Foods & Nutrition</a>
+                <a href="#">Medical Membership</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Towel</a>
+                <a href="#">Raincoats</a>
+              </div>
+            </div>
+      
+       
+            <div class="dropdown">
+              <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Baby Products</a>
+                <a href="#">schools Supplies</a>
+                <a href="#">Toys</a>
+              </div>
+            </div>
+       
+          
+      
+        
+            <div class="dropdown"  >
+              <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+              <div class="dropdown-content"  style="z-index: 2;">
+                <a href="#">Automobile</a>
+                <a href="#">Air Freshners</a>
+                <a href="#">Cleaners</a>
+                <a href="#">Color Polish</a>
+                <a href="#">Lubricants</a>
+                <a href="#">Sprayers</a>
+                <a href="#">Wax</a>
+                <a href="#">Others</a>
+                
+              </div>
+            </div>
+       
+      
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Promotional Items</a>
+                <a href="#">Office Automations</a>
+                <a href="#">Industrial Equipments</a>
+                <a href="#">Books & Stationaries</a>
+                <a href="#">Hobbyist Corner</a>
+                <a href="#">Musical Instruments</a>
+                <a href="#">Party Supplies</a>
+                <a href="#">Travel & Camping</a>
+                
+              </div>
+            </div>
+          
+            </div>
+      </div> 
+<!------------------------------------single product details---------------------------------------------->
+<section class="singleProduct">
+    <div class="small container single-product">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/product2.jpg" width="100%">
+
+                <div class="ratings">
+                    <h5>Ratings</h5>
+
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+
+            </div>
+
+            <!--------------Item Details------------->
+
+            <div class="col-6">
+                <p>Home/Electronics/Mobile Phones</p>
+                <h2>Samsung Galaxy Note 10 Factory Unlocked Cell Phone</h2>
+                <h4>Rs. 171,100.00</h4>
+
+                <!--------------Model------------->
+
+                <div class="col-2">
+                    <h5>Model</h5>
+                        <select>
+                            <option>Note 10</option>
+                            <option>Note 10+</option>
+                        </select>
+                </div>
+
+                <!--------------Color------------->
+
+                <div class="col-2">
+                    <h5>Color</h5>
+                        <select>
+                            <option>Select color</option>
+                            <option>Aura Glow</option>
+                            <option>Aura White</option>
+                            <option>Aura Black</option>
+                            <option>Aura Pink</option>
+                            <option>Aura Red</option>
+                        </select>
+                </div>
+
+                <!--------------Storage------------->
+
+                <div class="col-2">
+                    <h5>Storage</h5>
+                        <select>
+                            <option>Select storage</option>
+                            <option>512GB</option>
+                            <option>256GB</option>
+                            <option>128GB</option>
+                            <option>64GB</option>
+                            <option>32GB</option>
+                            <option>16GB</option>
+                        </select>
+                </div>
+
+                <!--------------Quantity------------->
+
+                <div class="col-2">
+
+                    <h6>Quantity</h6>
+                    <input type="number" value="1">
+
+                    <!--------------Buttons------------->
+
+                </div>
+
+                <div class="btn-list">
+                    <button type="button" style="background-color:darkorange;" class="btn "><i class="fa fa-shopping-bag"></i><a style="color: ghostwhite;" href="#">Buy Now</a></button>
+                    <button type="button" style="background-color:rgb(255, 208, 0);" class="btn "><i class="fa fa-shopping-cart"></i><a  style="color: ghostwhite;" href="#">Add to Cart</a></button>
+                    <button type="button"style="background-color: #76BAFF " class="btn "><i class="fa fa-heart"></i> <a  style="color: ghostwhite;" href="#">Add Wishlist</a></button>
+                </div>
+
+                <!--------------Product Details------------->
+
+                    <h3>Product Details</h3>
+                    <p>* Fast charging, long lasting intelligent power and super speed processing outlast whatever you throw at Note 10<br/>
+                        * S pen’s newest Evolution gives you the power of air gestures, a remote shutter and playlist button and handwriting to text, all in One Magic wand
+                        With a full set of Pro lenses, super stabilization, live video broken and precision audio recording, Note 10 is a studio in your pocket<br/>
+                        * Note 10’s nearly bezel less Infinity display gives an immersive, cinematic quality to whatever you’re viewing<br/>
+                        * Internet usage time(LTE) (hours) up to 14. Internet usage time(wi fi) (hours) up to 14. Audio playback time (hours, wireless) up to 60. Talk time (4G LTE) (hours) up to
+                        38. Video playback time (hours, wireless) up to 19<br/></p>
+
+                <!--------------Features------------->
+
+                    <h3>Features</h3>
+
+                        <p>Released 2019, August 23
+                            168g, 7.9mm thickness
+                            Android 9.0, up to Android 10, One UI 2.5
+                            256GB storage, no card slot<br/><br/>
+
+                            Display : 6.8"<br/><br/>
+
+                            Resolution : 1440x3040 pixels<br/><br/>
+
+                            Camera : 12MP<br/><br/>
+
+                            Ram : 12GB RAM<br/><br/>
+
+                            Battery : 300mAh , Li-Ion<br/><br/></p>
+
+
+            </div>
+        </div>
+
+        <!---------------------------Additional Information----------------------------->
+
+        <div class="row1">
+            <h3>Additional Information</h3>
+        </div>
+        <div class="row">
+
+            <!-----------------------------Table view------------------------------>
+
+            <div class="col-5">
+                <table class = "table">
+
+
+                    <tbody>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>Applicable</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Capacity</td>
+                        <td>512GB</td>
+                    </tr>
+
+                    <tr>
+                        <td>Warranty Period</td>
+                        <td>1 Year Warranty</td>
+                    </tr>
+
+                    <tr>
+                        <td>SIM</td>
+                        <td>Dual-SIM</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Color</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brand</td>
+                        <td>Samsung</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile Platform</td>
+                        <td>Android</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Model</td>
+                        <td>Galaxy Note10+</td>
+                    </tr>
+
+                    <tr>
+                        <td>Processor</td>
+                        <td>Octa-core (2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55) - EMEA/LATAM
+                            Octa-core (1x2.8 GHz Kryo 485 & 3x2.4 GHz Kryo 485 & 4x1.7 GHz Kryo 485) - USA/China</td>
+                    </tr>
+
+                    <tr>
+                        <td>Operating System</td>
+                        <td>Android 9.0 (Pie); One UI</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Sim</td>
+                        <td>Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Expandable Memory Slot</td>
+                        <td>microSD, up to 1 TB (uses shared SIM slot) - dual SIM model only</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile Screen Size</td>
+                        <td>6.8"</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Display Type</td>
+                        <td>Dynamic AMOLED capacitive touchscreen, 16M colors</td>
+                    </tr>
+
+                    <tr>
+                        <td>Display Resolution</td>
+                        <td>1440 x 3040 pixels, 19:9 ratio (~498 ppi density)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Key Pad</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Primary Cam</td>
+                        <td>12MP | 12MP | 16MP</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-5">
+                <table class = "table">
+
+
+                    <tbody>
+                    <tr>
+                        <td>Secondary Cam</td>
+                        <td>10MP</td>
+                    </tr>
+                    <tr>
+                        <td>Video Formats Supported</td>
+                        <td>No</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Audio Formats Supported</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Speakers</td>
+                        <td>Loudspeaker, with stereo speakers</td>
+                    </tr>
+
+                    <tr>
+                        <td>Headphone Jack</td>
+                        <td>No</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>FM</td>
+                        <td>FM radio (USA & Canada only)</td>
+                    </tr>
+
+                    <tr>
+                        <td>GPRS</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edge</td>
+                        <td>No</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Wifi</td>
+                        <td>Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, Wi-Fi Direct, hotspot</td>
+                    </tr>
+
+                    <tr>
+                        <td>USB</td>
+                        <td>3.1, Type-C 1.0 reversible connector</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bluetooth</td>
+                        <td>	5.0, A2DP, LE, aptX</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>GPS Support</td>
+                        <td>Yes, with A-GPS, GLONASS, BDS, GALILEO</td>
+                    </tr>
+
+                    <tr>
+                        <td>Preinstalled Browser</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>3G</td>
+                        <td>GSM / HSPA / LTE</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Battery Type</td>
+                        <td>Non-removable Li-Ion 4300 mAh battery</td>
+                    </tr>
+
+                    <tr>
+                        <td>Charging Connector</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Talktime</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Standby Time</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brief Size</td>
+                        <td>162.3 x 77.2 x 7.9 mm (6.39 x 3.04 x 0.31 in)</td>
+                    </tr>
+                    <tr>
+                        <td>In the Box</td>
+                        <td>No</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!-----------------------------Table view------------------------------>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-------------------------section------------------------------>
+
+<section class="Remember-categories">
+
+    <div class="container">
+
+        <!-------------------------Recommended items------------------------------>
+
+        <h3 class="title">Your Recommended</h3>
+            <div class="row">
+
+                <!-------------------------items1------------------------------>
+
+                <div class="col-md-4">
+                    <div class="product-content">
+
+                        <!-------------------------item image------------------------------>
+
+                        <img src="images/image-speaker1.png">
+
+                        <!--------------ratings------------->
+
+                        <div class="ratings">
+
+                            <h5>HP bluetooth Speaker</h5>
+
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+
+                            <h6>Rs:3,650.00</h6>
+
+                        </div>
+
+                        <div class="button-tab">
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------items1------------------------------>
+                <!-------------------------items2------------------------------>
+
+                <div class="col-md-4">
+                    <div class="product-content">
+
+                        <!-------------------------item image------------------------------>
+
+                        <img src="images/image-com1.png">
+
+                        <!--------------ratings------------->
+
+                        <div class="ratings">
+                            <br/>
+                            <br/>
+
+                            <h5>HP 100 USB Keyboard</h5>
+
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+
+                            <h6>Rs:1,500.00</h6>
+
+                        </div>
+
+                        <div class="button-tab">
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------items2----------------------------->
+                <!-------------------------items3------------------------------>
+
+                <div class="col-md-4">
+
+                    <div class="product-content">
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <!-------------------------item image------------------------------>
+
+                        <img src="images/image-speaker2.png">
+
+                        <!--------------ratings------------->
+
+                        <div class="ratings">
+
+                            <h5>JBL Boombox portable bluetooth speaker</h5>
+
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                            <h6>Rs:75,999.00</h6>
+
+                        </div>
+
+                        <div class="button-tab">
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                            <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------items3------------------------------>
+
+            </div>
+
+    </div>
+</section>
+<!-------------------------section------------------------------>
+<!-- Footer -->
+
+ 
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  
+  
+  
+  
+    const button = document.getElementById("btn");
+    const list = document.getElementById("list");
+  
+    list.style.display="none";
+  
+    button.addEventListener("click", (event) =>
+    {
+      if(list.style.display=="none"){
+        list.style.display="block"
+      }else{
+        list.style.display="none";
+      }
+     })
+    </script>
+  
+   <!-- Footer -->
+   <footer class="page-footer font-small unique-color-dark">
+  
+      
+      
+    <div style="background-color: #76BAFF;">
+      <div class="container  " style="margin-top: 1cm;height: 10cm;">
+        <br>
+       <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+        <!-- Grid row-->
+  
+       
+                
+                      <div style="width:18%; float:left; margin-top: 1cm;  ">
+                        <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                        <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                    </div>
+  
+                    <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                        <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                        <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                    </div>
+                    <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                        <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                        <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                        <P style="text-align: center;">Only brand new & Original products</P>
+                    </div>
+               
+                    <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                        <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                        <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                    </div>
+  
+                    <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                        <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                        <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                    
+                    </div>
+          
+        </div>
+  
+          
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+  
+    
+    
+  
+   
+
+          
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylep.css">
+</head>
+<body>
+
+ 
+<div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar ">
+        <!-- Search form -->
+        <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+        <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+     
+        <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+  
+        <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+          <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+            <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+         
+          
+            <div style="display: flex; margin-bottom: .5cm;">
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+  
+            
+            </div>
+            <div style="margin-left: 1cm;">
+            <a class="dropdown-item" href="Settings.html">My Account</a>
+            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+            <a class="dropdown-item" href="payment.html">My Orders</a>
+            <a class="dropdown-item" href="register_order.html">Track Order </a>
+            <a class="dropdown-item" href="payment.html">Order Review</a>
+          </div>
+            <div style="text-align: center;">
+              <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+            </div>
+  
+        </button>
+        
+      
+          <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+        <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+    </nav>
+    
+  </div>
+  
+  
+  
+  <div class="content"  style=" position: relative; background-color: #2E72FF;">
+  
+        <div class="items" style="  display: flex; justify-content: center;">
+          <div class="dropdown">
+             <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+                 <div class="dropdown-content" style="z-index: 2;">
+                  <a href="#">TV, Video & Audio</a>
+                  <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                  <a href="#">Computers & Accesories</a>
+                  <a href="#">Softwares</a>
+                  <a href="#">Speakers & Accesories</a>
+                </div>
+          </div>
+            <div class="dropdown">
+              <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Cleaning Supplies</a>
+                <a href="#">Dinnnig</a>
+                <a href="#">Kitchen Appiance</a>
+                <a href="#">Interior Decoration</a> 
+                <a href="#">Tools & Hardware</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Vegetables</a>
+                <a href="#">Fruits</a>
+                <a href="#">Meat & Fish</a>
+                <a href="#">Snacks</a>
+                <a href="#">Sweets</a>
+                <a href="#">Others</a>
+              </div>
+            </div>
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Sports & Outdoors </a>
+                <a href="#">Medical Aids & Supplies</a>
+                <a href="#">Fitness Equipments</a>
+                <a href="#">Personal care Appliances</a>
+                <a href="#">Foods & Nutrition</a>
+                <a href="#">Medical Membership</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Towel</a>
+                <a href="#">Raincoats</a>
+              </div>
+            </div>
+      
+       
+            <div class="dropdown">
+              <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Baby Products</a>
+                <a href="#">schools Supplies</a>
+                <a href="#">Toys</a>
+              </div>
+            </div>
+       
+          
+      
+        
+            <div class="dropdown"  >
+              <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+              <div class="dropdown-content"  style="z-index: 2;">
+                <a href="#">Automobile</a>
+                <a href="#">Air Freshners</a>
+                <a href="#">Cleaners</a>
+                <a href="#">Color Polish</a>
+                <a href="#">Lubricants</a>
+                <a href="#">Sprayers</a>
+                <a href="#">Wax</a>
+                <a href="#">Others</a>
+                
+              </div>
+            </div>
+       
+      
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Promotional Items</a>
+                <a href="#">Office Automations</a>
+                <a href="#">Industrial Equipments</a>
+                <a href="#">Books & Stationaries</a>
+                <a href="#">Hobbyist Corner</a>
+                <a href="#">Musical Instruments</a>
+                <a href="#">Party Supplies</a>
+                <a href="#">Travel & Camping</a>
+                
+              </div>
+            </div>
+          
+            </div>
+      </div> 
+
+<!-------------------side-bar--------------------------->
+
+<section class="header">
+    <h1>OFFERS</h1>
+    <div class="side-menu">
+
+        <!-------------------Categories--------------------------->
+
+        <ul class="top characters">
+            <li class="heading"><h5>Categories</h5></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href = "#">Home & Garden</a></li>
+            <li><a href = "#">Groceries</a></li>
+            <li><a href = "#">Beauty & Health</a></li>
+            <li><a href = "#">Clothing</a></li>
+            <li><a href = "#">Kids</a></li>
+            <li><a href = "#">Car Care</a></li>
+            <li><a href="#"> View more </a><i class="fa fa-angle-right"></i>
+                <ul>
+                    <li><a href="#">Promotional Items</a></li>
+                    <li><a href="#">Office Automation</a></li>
+                    <li><a href="#">Industrial Equipments</a></li>
+                    <li><a href="#">Books & Stationary</a></li>
+                    <li><a href="#">Hobbyist Corner</a></li>
+                    <li><a href="#">Musical Instruments</a></li>
+                    <li><a href="#">Party Supplies</a></li>
+                    <li><a href="#">Travel & Camping</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+        <!-------------------Discount Limit-------------------------->
+
+        <ul class = "top characters">
+            <li class = "heading"><h5>Discount Limit</h5></li>
+            <li><a href = "#">Above70%</a></li>
+            <li><a href = "#">60%-70%</a></li>
+            <li><a href = "#">50%-60%</a></li>
+            <li><a href = "#">40%-50%</a></li>
+            <li><a href = "#">Below 40%</a></li>
+        </ul>
+
+        <!------------------Services------------------------->
+
+        <ul class = "top characters">
+            <li class = "heading"><h5>Services</h5></li>
+            <li><a href = "#">Installment</a></li>
+            <li><a href = "#">Cash on Delivery</a></li>
+            <li><a href = "#">Free Shipping</a></li>
+
+        </ul>
+
+        <!------------------Warranty Type------------------------->
+
+        <ul class = "top characters">
+            <li class = "heading"><h5>Warranty Type</h5></li>
+            <li><a href = "#">Local Seller Warranty</a></li>
+            <li><a href = "#">Agent Warranty</a></li>
+            <li><a href = "#">Brand Warranty</a></li>
+            <li><a href = "#">No Warranty</a></li>
+            <li><a href = "#">Seller Warranty</a></li>
+        </ul>
+
+        <!------------------Ratings------------------------>
+
+        <ul class = "top characters">
+            <li class = "heading"><h5>Ratings</h5></li>
+            <a href="#"><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i></a>
+            <br/>
+            <a href="#"><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i></a>
+            <br/>
+            <a href="#"><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i></a>
+            <br/>
+            <a href="#"><i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i></a>
+            <br/>
+            <a href="#"><i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i></a>
+            <br/>
+            <a href="#"><i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i></a>
+
+        </ul>
+    </div>
+</section>
+<!-------------------side-bar--------------------------->
+
+<!------------------------------offers-------------------------------------->
+<section class="offers1-categories">
+    <div class="container">
+
+        <!------------------------------Above70%-------------------------------------->
+
+        <h2 class="title">Above70%</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image1.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Samsung Galaxy Note 10</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:273,159.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>70%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="singleproduct.html"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image6.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Apple iPhone11-128GB</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+
+                        <h6>Rs:240,057.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>70%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/images6.jpg">
+
+                    <div class="ratings">
+
+                        <h5>OPPO R17 Pro</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+
+                        <h6>Rs:151,787.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>70%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------Above70%-------------------------------------->
+
+        </div>
+    </div>
+
+</section>
+<section class="offers2-categories">
+    <div class="container">
+
+        <!------------------------------60%-70%-------------------------------------->
+
+        <h2 class="title">60%-70%</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-home1.jpg">
+
+                    <div class="ratings">
+
+                        <h5>ABANS Electric Oven-23L</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+
+                        <h6>Rs:13,095.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>60%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-beauty1.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Philips Hair Dryer</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:6,588.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>60%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-home4.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Harris Classic Paint Roller-9</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:1,182.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>60%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------60%-70%-------------------------------------->
+
+        </div>
+    </div>
+
+</section>
+<section class="offers3-categories">
+    <div class="container">
+
+        <!------------------------------50%-60%------------------------------------->
+
+        <h2 class="title">50%-60%</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-home2.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Elba Cooker Hobs</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:44,070.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>50%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------50%-60%------------------------------------->
+
+        </div>
+    </div>
+
+</section>
+<section class="offers4-categories">
+    <div class="container">
+
+        <!------------------------------40%-50%------------------------------------->
+
+        <h2 class="title">40%-50%</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-cloth2..webp">
+
+                    <div class="ratings">
+                        <h5>V Neck T-Shirt</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:2,160.00</h6>
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>40%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-gro2.jpeg">
+                    <h5>N JOY Pure White Coconut Oil</h5>
+                    <div class="ratings">
+
+                        <h5>N JOY Pure White Coconut Oil</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:790.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>40%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------40%-50%------------------------------------->
+
+        </div>
+    </div>
+
+</section>
+<section class="offers5-categories">
+    <div class="container">
+
+        <!------------------------------Below 40%------------------------------------->
+
+        <h2 class="title">Below 40%</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-cloth1.webp">
+
+                    <div class="ratings">
+
+                        <h5>Red T-Shirt</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:1,795.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>15%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-beauty2.png">
+
+                    <div class="ratings">
+
+                        <h5>PH Care Intimate Wash-30ml</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:462.00</h6>
+
+                    </div>
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>10%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-gro1.png">
+
+
+                    <div class="ratings">
+
+                        <h5>Kandos 21 Collection Milk</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:550.00</h6>
+
+                    </div>
+
+
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>10%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-cloth3.jpg">
+
+                    <div class="ratings">
+
+                        <h5>Woman's Knitted Polo T-Shirt</h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:2,450.00</h6>
+
+                    </div>
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>15%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product-content">
+                    <img src="images/image-kids1.jpg">
+                    <div class="ratings">
+                        <h5>Panda Baby Cream </h5>
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                        <h6>Rs:250.00</h6>
+                    </div>
+                    <div class="button-tab">
+                        <button type="button" class="btn btn-default" title="Discount"><h3>10%</h3></button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist"><a href="#"><i class="fa fa-heart-o"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="See Details"><a href="#"><i class="fa fa-eye"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"> <i class="fa fa-shopping-cart"></i></a></button>
+                        <button type="button" class="btn btn-secondary" title="buy now"><a href="#"><i class="fa fa-shopping-bag"></i></a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------Below 40%------------------------------------->
+
+        </div>
+    </div>
+
+</section>
+
+
+ 
+
+<script>
+   
+  
+  
+  
+  
+    const button = document.getElementById("btn");
+    const list = document.getElementById("list");
+  
+    list.style.display="none";
+  
+    button.addEventListener("click", (event) =>
+    {
+      if(list.style.display=="none"){
+        list.style.display="block"
+      }else{
+        list.style.display="none";
+      }
+     })
+    </script>
+  
+   <!-- Footer -->
+   <footer class="page-footer font-small unique-color-dark">
+  
+      
+      
+    <div style="background-color: #76BAFF;">
+      <div class="container  " style="margin-top: 1cm;height: 10cm;">
+        <br>
+       <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+        <!-- Grid row-->
+  
+       
+                
+                      <div style="width:18%; float:left; margin-top: 1cm;  ">
+                        <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                        <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                    </div>
+  
+                    <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                        <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                        <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                    </div>
+                    <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                        <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                        <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                        <P style="text-align: center;">Only brand new & Original products</P>
+                    </div>
+               
+                    <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                        <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                        <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                    </div>
+  
+                    <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                        <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                        <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                        <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                    
+                    </div>
+          
+        </div>
+  
+          
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+  
+    
+    
+  
+    
+    
+   
+    
+
+          
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

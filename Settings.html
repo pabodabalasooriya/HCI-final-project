@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takas.lk</title>
+  <link rel="stylesheet" href="styleTR.css" >
+   <link rel="stylesheet" type="text/css" href="setting.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+  
+  <link rel="icon" href="Images/icon.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar ">
+      <!-- Search form -->
+      <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+      <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+   
+      <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+
+      <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+        <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+          <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+       
+        
+          <div style="display: flex; margin-bottom: .5cm;">
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+
+          
+          </div>
+          <div style="margin-left: 1cm;">
+          <a class="dropdown-item" href="Settings.html">My Account</a>
+          <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+          <a class="dropdown-item" href="payment.html">My Orders</a>
+          <a class="dropdown-item" href="register_order.html">Track Order </a>
+          <a class="dropdown-item" href="payment.html">Order Review</a>
+        </div>
+          <div style="text-align: center;">
+            <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+          </div>
+
+      </button>
+      
+    
+        <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+      <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+  </nav>
+  
+</div>
+
+
+
+<div class="content"  style=" position: relative; background-color: #2E72FF;">
+
+      <div class="items" style="  display: flex; justify-content: center;">
+        <div class="dropdown">
+           <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+               <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">TV, Video & Audio</a>
+                <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                <a href="#">Computers & Accesories</a>
+                <a href="#">Softwares</a>
+                <a href="#">Speakers & Accesories</a>
+              </div>
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Cleaning Supplies</a>
+            <a href="#">Dinnnig</a>
+            <a href="#">Kitchen Appiance</a>
+            <a href="#">Interior Decoration</a> 
+            <a href="#">Tools & Hardware</a>
+          </div>
+        </div>
+  
+  
+    
+        <div class="dropdown">
+          <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Vegetables</a>
+            <a href="#">Fruits</a>
+            <a href="#">Meat & Fish</a>
+            <a href="#">Snacks</a>
+            <a href="#">Sweets</a>
+            <a href="#">Others</a>
+          </div>
+        </div>
+  
+  
+  
+        <div class="dropdown">
+          <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Sports & Outdoors </a>
+            <a href="#">Medical Aids & Supplies</a>
+            <a href="#">Fitness Equipments</a>
+            <a href="#">Personal care Appliances</a>
+            <a href="#">Foods & Nutrition</a>
+            <a href="#">Medical Membership</a>
+          </div>
+        </div>
+  
+  
+    
+        <div class="dropdown">
+          <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Kids</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Sunglasses</a>
+            <a href="#">Towel</a>
+            <a href="#">Raincoats</a>
+          </div>
+        </div>
+  
+   
+        <div class="dropdown">
+          <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Kids</a>
+            <a href="#">Baby Products</a>
+            <a href="#">schools Supplies</a>
+            <a href="#">Toys</a>
+          </div>
+        </div>
+   
+      
+  
+    
+        <div class="dropdown"  >
+          <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+          <div class="dropdown-content"  style="z-index: 2;">
+            <a href="#">Automobile</a>
+            <a href="#">Air Freshners</a>
+            <a href="#">Cleaners</a>
+            <a href="#">Color Polish</a>
+            <a href="#">Lubricants</a>
+            <a href="#">Sprayers</a>
+            <a href="#">Wax</a>
+            <a href="#">Others</a>
+            
+          </div>
+        </div>
+   
+  
+  
+  
+  
+        <div class="dropdown">
+          <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+          <div class="dropdown-content" style="z-index: 2;">
+            <a href="#">Promotional Items</a>
+            <a href="#">Office Automations</a>
+            <a href="#">Industrial Equipments</a>
+            <a href="#">Books & Stationaries</a>
+            <a href="#">Hobbyist Corner</a>
+            <a href="#">Musical Instruments</a>
+            <a href="#">Party Supplies</a>
+            <a href="#">Travel & Camping</a>
+            
+          </div>
+        </div>
+      
+        </div>
+  </div> 
+
+<!-- ?????????????????????????????????????????????style=" background-color: #FFC300; outline: none;"???????????????????????????????????????????????????????????????????????????? -->
+
+<div class="container" style="margin-top: 45px; ">
+     <div class="row gutters-sm">
+        <div class="col-md-4 d-none d-md-block">
+          <div class="card" style="background-color: #FFFFF0;">
+            <div class="card-body">
+              <nav class="nav flex-column nav-pills nav-gap-y-1">
+                <a href="#profile" data-toggle="tab" class="nav-item nav-link has nav-link-faded active">
+                Profile Informations</a>
+                <a href="#billing" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                Billing Informations
+                </a>
+                <a href="#addressing" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                AddressBook
+                </a>
+                <a href="#orders" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                My Orders
+                </a>
+                <a href="#account" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                Account
+                </a>
+                <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                Security
+                </a>
+                <a href="#notification" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                Notification
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card" style="background-color: #FFFFF0;">
+            <div class="card-header border-bottom mb-3 d-flex d-md-none">
+              <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+                <li class="nav-item">
+                  <a href="#profile" data-toggle="tab" class="nav-link has-icon active"></a>
+                </li>
+                 <li class="nav-item">
+                  <a href="#billing" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                  <li class="nav-item">
+                  <a href="#addressing" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#orders" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#account" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#security" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#notification" data-toggle="tab" class="nav-link has-icon"></a>
+                </li>
+                
+              </ul>
+            </div> 
+            <div class="card-body tab-content">
+              <div class="tab-pane active" id="profile">
+                <h6><b>PROFILE INFORMATIONS</b></h6>
+                <hr>
+                <form>
+                  <small id="fullNameHelp" class="form-text text-muted">Your details may appear around here where you are mentioned. You can change it at any time.</small> 
+
+                  <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="tel" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your full name" value="John Smith">
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName">Email</label>
+                    <input type="tel" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your valid email address" value="johnsmithker@gmail.com">
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName">First Name</label>
+                    <input type="tel" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your full name" value="John">
+                  
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName">Last Name</label>
+                    <input type="tel" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your full name" value="Smith">
+      
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobileNumber" aria-describedby="mobileNumberHelp" placeholder="" value="">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="fullName">Birth Day</label>
+                    <input type="date" class="form-control" id="birthday" aria-describedby="birthdayHelp"  value="Birth Day">
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName">Gender</label>
+                    <select>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                    
+                  </div>
+                  <div class="form-group small text-muted">
+                    All of the fields on this page are optional and can be changed at any time, and by filling them out, you're giving us consent to share this data wherever your user profile appears.
+                  </div>
+                  <button type="button" class="btn btn-primary" style="background-color: rgb(255, 196, 0); border: none; ">Update Profile</button>
+                </form>
+              </div>
+              <div class="tab-pane" id="billing">
+                <h6><b>BILLING INFORMATIONS</b></h6>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label class="d-block mb-0">Payment Method</label>
+                    <button id="myBtn" class="btn btn-primary" type="button" style="margin-top: 10px; background-color: rgb(255, 196, 0); border: none; ">Add Payment Method</button>
+                    <!-- ///////////////////////////////////////////////////// -->
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content" style="width: 900px; height: 520px">
+                        <span class="close" style="margin-left: 178px; margin-top: -5px;">&times;</span>
+                        <div class="centerB">
+                            <h4>CREDIT/DEBIT CARD PAYMENT</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6"> <span style="color: red"><em>*</em> Denotes required fields</span> </div>
+                                <div class="col-md-6 text-right" style="margin-top: -5px;"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                            </div>
+                            <div class="card-body" style="height: 350px">
+                                <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER<em style="color: red;">*</em></label> <input id="cc-number" type="number" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="1524 4866 7877 4544" maxlength="16" required > </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY<em style="color: red;">*</em></label> <input id="cc-exp" type="number" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="12 / 22" required> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC<em style="color: red;">*</em></label> <input id="cc-cvc" type="number" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="363" required> </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input type="number" class="input-lg form-control"> </div>
+                                <div class="form-group"> <input value="MAKE PAYMENT" type="button" class="btn btn-primary btn-lg form-control" style="font-size: .8rem; margin-top: 5px; background-color: rgb(255, 196, 0); border: none; "> </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <!-- ///////////////////////////////////////////-->
+                  </div>
+                  <div class="form-group mb-0">
+                    <label class="d-block">Payment Method list</label>
+                    <div class="border border-gray-500 bg-gray-200 p-3 text-center font-size-sm">You have not saved any payment details.</div>
+                  </div>
+                </form>
+              </div>
+               <div class="tab-pane" id="addressing">
+                <h6><b>DELIVERY SETTINGS</b></h6>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label class="d-block mb-0">Address Book</label>
+                    <button id="addBtn" class="btn btn-primary" type="button" style="margin-top: 10px; background-color: rgb(255, 196, 0); border: none; ">Add Delivery Address</button>
+                    <div id="myAdd" class="modal">
+                    <div class="add-content" style="margin-top: -20px;">
+                      <span class="closebtn" style="margin-left: 200px;">&times;</span>
+                      <div class="container-fluid d-flex justify-content-center"></div>
+                      <div class="center">
+                        <h3><b></b>DELIVERY ADDRESS</b></h3>
+                        <hr>
+                       <div class="column">
+                           <form>
+                              <label for="fname"><i class="fa fa-user"></i> First Name<em style="color: red;">*</em></label>
+                           <input type="text" id="fname" name="firstname" placeholder="John" required="required">
+                           <label for="fname"><i class="fa fa-user"></i> Last Name<em style="color: red;">*</em></label>
+                           <input type="text" id="fname" name="firstname" placeholder="Smith">
+                           <label for="email"><i class="fa fa-envelope"></i> Company</label>
+                           <input type="text" id="email" name="email" placeholder="ABC company">
+                           <label for="adr"><i class="fa fa-address-card-o"></i> Address<em style="color: red;">*</em></label>
+                           <input type="text" id="adr" name="address" placeholder="542 W">
+                           <input type="text" id="adr" name="address" placeholder="15th Street">  
+                           </form>
+                       </div>
+                       <div class="column">
+                           <form>
+                            <label for="city"><i class="fa fa-institution"></i> City / Town<em style="color: red;">*</em></label>
+                            <input type="text" id="city" name="city" placeholder="Colombo">
+                            <label for="state"><i class="fa fa-institution"></i> Province<em style="color: red;">*</em></label>
+                            <input type="text" id="state" name="state" placeholder="Western Province">
+                            <label for="zip"><i class="fa fa-institution"></i> Zip / Postal Code<em style="color: red;">*</em></label>
+                            <input type="text" id="zip" name="zip" placeholder="75852">
+                            <label for="country"><i class="fa fa-globe"></i> Country<em style="color: red;">*</em></label>
+                            <input type="text" id="country" name="country" placeholder="Sri Lanka">
+
+                            <span style="color: red"><em>*</em> Denotes required fields</span>
+                  
+                    </div>
+                      <div class="btnSub"><input type="submit" value="Save Billing Address" class="btn btn-primary" style="background-color: rgb(255, 196, 0); border: none; "> </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label class="d-block">Delivery Address List</label>
+                    <div class="border border-gray-500 bg-gray-200 p-3 text-center font-size-sm">You have not saved any delivery details.</div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="orders">
+                <h6><b>MY ORDERS</b></h6>
+                <hr>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Image</th>
+                      <th scope="col">Item</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Purchase Date</th>
+                      <th scope="col">Delivered Date</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                 
+                  </tbody>
+                </table>
+                <p style="text-align: center;">You have not purchased any item yet.</p>
+              <!-- ///////////////////////////////////////////////// -->
+              </div>
+              <div class="tab-pane" id="account">
+                <h6><b>ACCOUNT SETTINGS</b></h6>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter your username" value="JohnSmith">
+                    <small id="usernameHelp" class="form-text text-muted">After changing your username, your old username becomes available for anyone else to claim.</small>
+                    <button class="btn btn-primary" type="button" style="margin-top: 10px; background-color: rgb(255, 196, 0); border: none; ">Change</button>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <label class="d-block text-danger">Delete Account</label>
+                    <p class="text-muted font-size-sm">Once you delete your account, there is no going back. Please be certain.</p>
+                  </div>
+                  <button class="btn btn-danger" type="button">Delete Account</button>
+                </form>
+              </div>
+              <div class="tab-pane" id="security">
+                <h6><b>SECURITY SETTINGS</b></h6>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label class="d-block">Change Password</label>
+                    <input type="text" class="form-control" placeholder="Enter your old password">
+                    <input type="text" class="form-control mt-1" placeholder="New password">
+                    <input type="text" class="form-control mt-1" placeholder="Confirm new password">
+                    <button class="btn btn-primary" type="button" style="margin-top: 10px; background-color: rgb(255, 196, 0); border: none; ">Change</button>
+                  </div>
+                </form>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label class="d-block">Two Factor Authentication</label>
+                    <button class="btn btn-primary" type="button" style="background-color: rgb(255, 196, 0); border: none; ">Enable two-factor authentication</button>
+                    <p class="small text-muted mt-2">Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to log in.</p>
+                  </div>
+                </form>
+                <hr>
+                <form>
+                  <div class="form-group mb-0">
+                    <label class="d-block">Sessions</label>
+                    <p class="font-size-sm text-secondary">This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.</p>
+                    <ul class="list-group list-group-sm">
+                      <li class="list-group-item has-icon">
+                        <div>
+                          <h6 class="mb-0">ColomboSL 123.231.108.10</h6>
+                          <small class="text-muted">Your current session seen in Sri lanka</small>
+                        </div>
+                        <button class="btn btn-light btn-sm ml-auto" type="button">More info</button>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="notification">
+                <h6><b>NOTIFICATION SETTINGS</b></h6>
+                <hr>
+                <form>
+                  <div class="form-group">
+                 
+                  </div>
+                  <div class="form-group mb-0">
+                    <label class="d-block">Email Notifications</label>
+                    <ul class="list-group list-group-sm">
+                      <li class="list-group-item has-icon" style="background-color: #FFFFF0">
+                        Policy changes
+                        <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                          <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                      </li>
+                      <li class="list-group-item has-icon" style="background-color: #FFFFF0">
+                        Offers & Discounts
+                        <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                          <label class="custom-control-label" for="customSwitch2"></label>
+                        </div>
+                      </li>
+                      <li class="list-group-item has-icon" style="background-color: #FFFFF0">
+                        Events
+                        <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                          <label class="custom-control-label" for="customSwitch3"></label>
+                        </div>
+                      </li>
+                      <li class="list-group-item has-icon" style="background-color: #FFFFF0">
+                        New Arrivals
+                        <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                          <label class="custom-control-label" for="customSwitch4"></label>
+                        </div>
+                      </li>
+                      <li class="list-group-item has-icon" style="background-color: #FFFFF0">
+                        Updates
+                        <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                          <label class="custom-control-label" for="customSwitch5"></label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+<script>
+  var add = document.getElementById("myAdd");
+  var btn = document.getElementById("addBtn");
+  var spanAdd = document.getElementsByClassName("closebtn")[0];
+  btn.onclick = function() {
+    add.style.display = "block";
+  }
+  spanAdd.onclick = function() {
+    add.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == add) {
+      add.style.display = "none";
+    }
+  }
+
+
+
+
+
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+
+
+
+  const button = document.getElementById("btn");
+  const list = document.getElementById("list");
+
+  list.style.display="none";
+
+  button.addEventListener("click", (event) =>
+  {
+    if(list.style.display=="none"){
+      list.style.display="block"
+    }else{
+      list.style.display="none";
+    }
+   })
+  </script>
+
+ <!-- Footer -->
+ <footer class="page-footer font-small unique-color-dark">
+
+    
+    
+  <div style="background-color: #76BAFF;">
+    <div class="container  " style="margin-top: 1cm;height: 10cm;">
+      <br>
+     <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+      <!-- Grid row-->
+
+     
+              
+                    <div style="width:18%; float:left; margin-top: 1cm;  ">
+                      <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                      <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                      <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                      <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                  </div>
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                      <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                      <P style="text-align: center;">Only brand new & Original products</P>
+                  </div>
+             
+                  <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                      <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                      <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                      <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                  
+                  </div>
+        
+      </div>
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+
+  
+  
+
+
+          
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+/*---------------------side-menu-mobile phones------------------------------*/
+.side-menu{
+    height: 2740px;
+    width: 18%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+.side-menu ul{
+    margin-left: 10px;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    color: black;
+}
+.side-menu ul li:hover{
+    color:blue;
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 600px;
+    margin-left: 10%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #dddddd;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+@media only screen and (max-width: 980px){
+    .side-menu{
+        width: 34%;
+        height: 100%;
+        z-index: 20;
+        top: 10px;
+        position: fixed;
+        font-size: 12px;
+        background: #dddddd;
+        display: none;
+    }
+    .side-menu ul li ul{
+        top: 113px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 20%;
+    }
+    h5{
+        font-size: 14px;
+    }
+}
+/*---------------------------------Brand categories----------------------------------------*/
+.Brand1-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Brand1-categories img{
+    width:80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Brand1-categories img:hover{
+    transform: scale(1.1);
+}
+.Brand2-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Brand2-categories img{
+    width: 80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Brand2-categories img:hover{
+    transform: scale(1.1);
+}
+.Brand3-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Brand3-categories img{
+    width: 80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Brand3-categories img:hover{
+    transform: scale(1.1);
+}
+.Brand4-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Brand4-categories img{
+    width: 90%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Brand4-categories img:hover{
+    transform: scale(1.1);
+}
+.Brand5-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Brand5-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Brand5-categories img:hover{
+    transform: scale(1.1);
+}
+/*------------------------------------------contactus CSS--------------------------------------------*/
+.jumbotron{
+    background-color: #fffc7b ;
+}

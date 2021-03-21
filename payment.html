@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>02. Payment Method</title>
+    <link rel="stylesheet" href="h&f/style.css" >
+  
+  <link rel="icon" href="h&f/Images/icon.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+    <style>
+
+      .banner {
+      position: relative;
+      height: 300px;
+      background-image: url("download.jpg");  
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.2); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+     .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #17c8c0;
+  color: white;
+  padding: 12px ;
+  /* margin: 60px 50px; */
+  border: 50px;
+  width: 20%;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 17px;
+  align-items: center;
+  /* margin-left: 500px; */
+
+}
+
+.btn:hover {
+  background-color: #17c8c0;
+}
+
+.btn:block {
+      margin-left: 50px;
+      text-align: center;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <body>
+
+      
+<div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar ">
+      <!-- Search form -->
+      <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+      <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+   
+      <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+
+      <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+        <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+          <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+       
+        
+          <div style="display: flex; margin-bottom: .5cm;">
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+            <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+
+          
+          </div>
+          <div style="margin-left: 1cm;">
+          <a class="dropdown-item" href="Settings.html">My Account</a>
+          <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+          <a class="dropdown-item" href="payment.html">My Orders</a>
+          <a class="dropdown-item" href="register_order.html">Track Order </a>
+          <a class="dropdown-item" href="payment.html">Order Review</a>
+        </div>
+          <div style="text-align: center;">
+            <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+          </div>
+
+      </button>
+      
+    
+        <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+      <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+  </nav>
+  
+</div>
+
+
+
+<div class="content"  style=" position: relative; background-color: #2E72FF;">
+
+      <div class="items" style="  display: flex; justify-content: center;">
+        <div class="dropdown">
+           <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+               <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">TV, Video & Audio</a>
+                <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                <a href="#">Computers & Accesories</a>
+                <a href="#">Softwares</a>
+                <a href="#">Speakers & Accesories</a>
+              </div>
+        </div>
+
+        
+            <div class="dropdown">
+              <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Cleaning Supplies</a>
+                <a href="#">Dinnnig</a>
+                <a href="#">Kitchen Appiance</a>
+                <a href="#">Interior Decoration</a> 
+                <a href="#">Tools & Hardware</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Vegetables</a>
+                <a href="#">Fruits</a>
+                <a href="#">Meat & Fish</a>
+                <a href="#">Snacks</a>
+                <a href="#">Sweets</a>
+                <a href="#">Others</a>
+              </div>
+            </div>
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Sports & Outdoors </a>
+                <a href="#">Medical Aids & Supplies</a>
+                <a href="#">Fitness Equipments</a>
+                <a href="#">Personal care Appliances</a>
+                <a href="#">Foods & Nutrition</a>
+                <a href="#">Medical Membership</a>
+              </div>
+            </div>
+      
+      
+        
+            <div class="dropdown">
+              <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Towel</a>
+                <a href="#">Raincoats</a>
+              </div>
+            </div>
+      
+       
+            <div class="dropdown">
+              <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Kids</a>
+                <a href="#">Baby Products</a>
+                <a href="#">schools Supplies</a>
+                <a href="#">Toys</a>
+              </div>
+            </div>
+       
+          
+      
+        
+            <div class="dropdown"  >
+              <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+              <div class="dropdown-content"  style="z-index: 2;">
+                <a href="#">Automobile</a>
+                <a href="#">Air Freshners</a>
+                <a href="#">Cleaners</a>
+                <a href="#">Color Polish</a>
+                <a href="#">Lubricants</a>
+                <a href="#">Sprayers</a>
+                <a href="#">Wax</a>
+                <a href="#">Others</a>
+                
+              </div>
+            </div>
+       
+      
+      
+      
+      
+            <div class="dropdown">
+              <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+              <div class="dropdown-content" style="z-index: 2;">
+                <a href="#">Promotional Items</a>
+                <a href="#">Office Automations</a>
+                <a href="#">Industrial Equipments</a>
+                <a href="#">Books & Stationaries</a>
+                <a href="#">Hobbyist Corner</a>
+                <a href="#">Musical Instruments</a>
+                <a href="#">Party Supplies</a>
+                <a href="#">Travel & Camping</a>
+                
+              </div>
+            </div>
+          
+            </div>
+      </div> 
+            
+      
+      
+    
+ <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+         <form action="/">
+        <div class="banner">
+          <h1>02. Payment Method</h1>
+        </div>
+
+       <!--  <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Mr.Nimal">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" class="ml-5"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn ml-5">
+      </form>
+    </div>
+  </div>
+
+ <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+         <form action="/">
+        <div class="banner">
+          <h1>03. Order Review</h1>
+        </div>
+
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">LKR 2500</span></p>
+      <p><a href="#">Product 2</a> <span class="price">LKR 850</span></p>
+      <p><a href="#">Product 3</a> <span class="price">LKR 11500</span></p>
+      <p><a href="#">Product 4</a> <span class="price">LKR 765</span></p>
+       <p><a href="#">Delivery Charges</a> <span class="price">LKR 250</span></p>
+      <hr>
+      <p>Total (with additional delivery charges)<span class="price" style="color:black"><b>LKR 15,865</b></span></p>
+       <input type="submit" value="checkout" class="btn">
+    </div>
+  </div>
+</div>
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+
+
+
+  const button = document.getElementById("btn");
+  const list = document.getElementById("list");
+
+  list.style.display="none";
+
+  button.addEventListener("click", (event) =>
+  {
+    if(list.style.display=="none"){
+      list.style.display="block"
+    }else{
+      list.style.display="none";
+    }
+   })
+  </script>
+
+ <!-- Footer -->
+ <footer class="page-footer font-small unique-color-dark">
+
+    
+    
+  <div style="background-color: #76BAFF;">
+    <div class="container  " style="margin-top: 1cm;height: 10cm;">
+      <br>
+     <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+      <!-- Grid row-->
+
+     
+              
+                    <div style="width:18%; float:left; margin-top: 1cm;  ">
+                      <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                      <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                      <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                      <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                  </div>
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                      <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                      <P style="text-align: center;">Only brand new & Original products</P>
+                  </div>
+             
+                  <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                      <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                      <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                      <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                  
+                  </div>
+        
+      </div>
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+
+  
+  
+
+  
+  
+ 
+  
+
+          
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

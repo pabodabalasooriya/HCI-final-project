@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takas.lk</title>
+    <link rel="stylesheet" href="style.css" >
+    
+    <link rel="icon" href="Images/icon.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar ">
+        <!-- Search form -->
+        <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+        <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+     
+        <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+  
+        <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+          <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+            <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+         
+          
+            <div style="display: flex; margin-bottom: .5cm;">
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+  
+            
+            </div>
+            <div style="margin-left: 1cm;">
+            <a class="dropdown-item" href="Settings.html">My Account</a>
+            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+            <a class="dropdown-item" href="payment.html">My Orders</a>
+            <a class="dropdown-item" href="register_order.html">Track Order </a>
+            <a class="dropdown-item" href="payment.html">Order Review</a>
+          </div>
+            <div style="text-align: center;">
+              <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+            </div>
+  
+        </button>
+        
+      
+          <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+        <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+    </nav>
+    
+  </div>
+  
+  
+  
+  <div class="content"  style=" position: relative; background-color: #2E72FF;">
+  
+        <div class="items" style="  display: flex; justify-content: center;">
+          <div class="dropdown">
+             <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+                 <div class="dropdown-content" style="z-index: 2;">
+                  <a href="#">TV, Video & Audio</a>
+                  <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                  <a href="#">Computers & Accesories</a>
+                  <a href="#">Softwares</a>
+                  <a href="#">Speakers & Accesories</a>
+                </div>
+          </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Cleaning Supplies</a>
+          <a href="#">Dinnnig</a>
+          <a href="#">Kitchen Appiance</a>
+          <a href="#">Interior Decoration</a> 
+          <a href="#">Tools & Hardware</a>
+        </div>
+      </div>
+
+
+  
+      <div class="dropdown">
+        <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Vegetables</a>
+          <a href="#">Fruits</a>
+          <a href="#">Meat & Fish</a>
+          <a href="#">Snacks</a>
+          <a href="#">Sweets</a>
+          <a href="#">Others</a>
+        </div>
+      </div>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Sports & Outdoors </a>
+          <a href="#">Medical Aids & Supplies</a>
+          <a href="#">Fitness Equipments</a>
+          <a href="#">Personal care Appliances</a>
+          <a href="#">Foods & Nutrition</a>
+          <a href="#">Medical Membership</a>
+        </div>
+      </div>
+
+
+  
+      <div class="dropdown">
+        <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Kids</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Sunglasses</a>
+          <a href="#">Towel</a>
+          <a href="#">Raincoats</a>
+        </div>
+      </div>
+
+ 
+      <div class="dropdown">
+        <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Kids</a>
+          <a href="#">Baby Products</a>
+          <a href="#">schools Supplies</a>
+          <a href="#">Toys</a>
+        </div>
+      </div>
+ 
+    
+
+  
+      <div class="dropdown"  >
+        <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+        <div class="dropdown-content"  style="z-index: 2;">
+          <a href="#">Automobile</a>
+          <a href="#">Air Freshners</a>
+          <a href="#">Cleaners</a>
+          <a href="#">Color Polish</a>
+          <a href="#">Lubricants</a>
+          <a href="#">Sprayers</a>
+          <a href="#">Wax</a>
+          <a href="#">Others</a>
+          
+        </div>
+      </div>
+ 
+
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Promotional Items</a>
+          <a href="#">Office Automations</a>
+          <a href="#">Industrial Equipments</a>
+          <a href="#">Books & Stationaries</a>
+          <a href="#">Hobbyist Corner</a>
+          <a href="#">Musical Instruments</a>
+          <a href="#">Party Supplies</a>
+          <a href="#">Travel & Camping</a>
+          
+        </div>
+      </div>
+    
+      </div>
+</div> 
+      
+
+
+<br>
+
+<div class="container mt-5">
+
+
+    <!--Section: Content-->
+    <section class="">
+  
+      <!-- Section heading -->
+      <h2 class="text-center font-weight-bold mb-5">Latest news</h2>
+  
+        <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+  
+          <!-- Card -->
+          <div class=" card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n1.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">How Takas.lk founder Pathmalal's twisting career path led him home</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Lahiru Pathmalal is full of interesting contradictions. The 34-year-old angered his father by abandoning his economic major to study politics and psychology in the U.S. Yet Pathmalal ended up being one of Sri Lanka's most successful entrepreneurs, having set up Takas.lk, Sri Lanka's biggest e-tailer</p>
+                          
+              <a href="https://www.cnbc.com/2016/04/28/takaslk-sri-lanka-e-tail-founder-lahiru-pathmalals-twisting-career-path-led-him-home.html" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n2.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Takas.lk marks record turnover, volume in 2017</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">This is highly significant considering that overall consumption in the economy has seen a downward trend, or at best has been flat. Takas attributes the record year to improved efficiencies in marketing and operations due to internal innovation and overall consumer sentiment changing towards the value proposition of e-commerce.
+
+                Read more</p>
+                          
+                <a href="http://www.ft.lk/it-telecom-tech/Takas-lk-marks-record-turnover--volume-in-2017/50-646357" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-0">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n3.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">The subcontinent startups: Pakistan, Bangladesh and Sri Lanka making a begining as well</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Takas is the largest e-commerce firm in Sri Lanka funded by Blue Ocean Ventures and Indian Angel Network.</p>
+                          
+              <a href="https://economictimes.indiatimes.com/" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      
+      
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+
+
+
+
+  <div class="container mt-5">
+
+
+    <!--Section: Content-->
+    <section class="">
+  
+      <!-- Section heading -->
+      
+  
+        <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n4.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Takas.lk founder has big hopes for Sri Lanka</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Sri Lanka’s largest e-tailer Takas.lk has made its mark since its debut in 2012. Started by chief executive officer Lahiru Pathmalal along with two friends, Takas.lk has grown over the years, currently selling over US$200,000 each month with 38 employees in its fold.</p>
+                          
+              <a href="http://www.sundaytimes.lk/160508/business-times/takas-lk-founder-has-big-hopes-for-sri-lanka-192871.html" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n5.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Meet Lahiru Pathmalal, Founder, Sri Lanaka's Online Electronics Store Taks.lk</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Lahiru Pathmalal has a BA in Political Science, and a Masters in International Relations from the University of Queensland. He has worked in United States, Afghanistan and Australia in child care. And has also worked as the Program Coordinator at the International Center for Ethnic Studies in Sri Lanka. So What led this Political Science graduate to start an e-commerce venture in Sri Lanka? Let us find out!</p>
+                          
+              <a href="https://yourstory.com/2013/07/meet-lahiru-pathmalal-founder-sri-lankas-online-electronics-store-takas-lk/" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-0">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n6.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Why investing in Sri Lanka is like turning the clock back for Google Indian chief</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">The obvious move – and Rajan does not hesitate to do this – is to draw parallels between Sri Lankan and Indian ecommerce. “I think of Sri Lanka as India five years ago,” he says.</p>
+                          
+              <a href="https://www.techinasia.com/investing-sri-lanka-turning-clock-google-india-chief" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      
+      
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+
+
+
+  <div class="container mt-5">
+
+
+    <!--Section: Content-->
+    <section class="">
+  
+    
+      
+        <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n7.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Takas.lk ranked as No.1 start-up in Sr Lanka</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Takas.lk has beaten more than 94 registered sites in Sri Lanka to take the top spot. Furthermore, there are more than 7,000 registered sites that are currently being evaluated on startupranking.com from across the globe.</p>
+                          
+              <a href="http://www.dailymirror.lk/79525/takas-lk-ranked-as-the-1-start-up-in-sri-lanka" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n8.jpg" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Takas.lk: a shopper's point of view</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Personally, I’m a bit wary of e-commerce sites. There’s usually good stuff hidden by layers and layers or troll ads, and one can only take so many terribly worded, overpriced ads along the lines “Saling Core2Duo latest G41 VGA can play any game”. Takas.lk, on the other hand (snap) is a welcome change. </p>
+                          
+              <a href="http://www.readme.lk/takas-lk-shoppers-point-view/"> <button type="button" class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-0">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="Images/n9.png" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <a href="#!" class="black-text">Venture Engine returns for fourth installation</a>
+              <!-- Text -->
+              <p class="card-title text-muted font-small mt-3 mb-2">Takas.lk was able to receive a significant amount of funding with the assistance of the network in two rounds.</p>
+                          
+              <a href="https://yourstory.com/2013/07/meet-lahiru-pathmalal-founder-sri-lankas-online-electronics-store-takas-lk/" ><button type="button"  class="btn btn-flat text-primary p-0 mx-0">Read more<i class="fa fa-angle-right ml-2"></i></button></a>
+              
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+      
+   
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+
+
+  <br>
+<div style="margin-left: 4cm; margin-right: 4cm;" >
+  <h5 class="word"><span >Featured In</span></h5>
+</div>
+
+
+<br>
+<section style=" margin-left: 5cm; background-color: #5e606131; height: 2cm; margin-right: 5cm;"  >
+  <div style=" padding: .25cm; text-align: center; ;  height:1cm ">
+
+   <img src="Images/logo5.png"style="width:3cm;  "  >
+   <img src="Images/logo6" style="width:1.5cm ;  margin-left:1.5cm ">
+   <img src="Images/logo7.svg" style="width:1.5cm;  margin-left:1.5cm ">
+   <img src="Images/logo8.png" style="width:4cm;  margin-left:1.5cm ">
+   <img src="Images/logo9.png" style="width:1.5cm; margin-left:1.5cm ">
+   <img src="Images/logo10.png" style="width:2cm;  margin-left:1.5cm ">
+
+  </div>
+  </section>
+
+</div>
+
+
+ 
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+
+
+
+  const button = document.getElementById("btn");
+  const list = document.getElementById("list");
+
+  list.style.display="none";
+
+  button.addEventListener("click", (event) =>
+  {
+    if(list.style.display=="none"){
+      list.style.display="block"
+    }else{
+      list.style.display="none";
+    }
+   })
+  </script>
+
+ <!-- Footer -->
+ <footer class="page-footer font-small unique-color-dark">
+
+    
+    
+  <div style="background-color: #76BAFF;">
+    <div class="container  " style="margin-top: 1cm;height: 10cm;">
+      <br>
+     <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+      <!-- Grid row-->
+
+     
+              
+                    <div style="width:18%; float:left; margin-top: 1cm;  ">
+                      <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                      <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                      <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                      <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                  </div>
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                      <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                      <P style="text-align: center;">Only brand new & Original products</P>
+                  </div>
+             
+                  <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                      <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                      <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                      <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                  
+                  </div>
+        
+      </div>
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+
+  
+  
+
+  
+  
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

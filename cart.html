@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takas.lk</title>
+    <link rel="stylesheet" href="style.css" >
+    
+    <link rel="icon" href="Images/icon.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+
+  <div  class="header" id="myHeader"  style=" z-index: 3; background-color: #76BAFF; ">
+  
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar ">
+        <!-- Search form -->
+        <a href="home page.html"> <button class="btn" ><img  src="Images/logo.jpg" width="150px" style="margin-left: 1.5cm;"></button> </a>
+        <input class="form-control" type="search" onkeyup="myFunction()" placeholder="   S e a r c h    E n t i r e    S t o r e    H e r e   . . . " style="width:19cm;  height: 60px; margin:20px 00px 20px 20px; border-radius: 10px; border-style: none;">
+     
+        <button class="btn"><i class="fa fa-search" aria-hidden="true" style="border: none; border-radius: 10px; font-size: 20px; cursor: pointer;  background-color: rgb(255, 196, 0); color: rgb(221, 162, 0); padding: 20px;"></i></button>
+  
+        <button  class=" btn dropdown " id="btn" style="border: none;" ><i class="fa fa-user btn" style="font-size: 30px; border-radius: 5px; margin-bottom: 0cm; cursor: pointer; color:white;"></i>
+          <div id=list class="dropdown-menu dropdown-content2 divcon" style="width: 10cm;" aria-labelledby="dropdownMenuLink">
+            <h3 style="padding: 1cm; color:rgb(245, 108, 17)">Welcome to Takas ...</h3>
+         
+          
+            <div style="display: flex; margin-bottom: .5cm;">
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 2cm;"  href="SignIn.html"class="btn btn-black btn-rounded btn-sm px-3">Sign In</a>
+              <a type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm;margin-left: 1cm; margin-right: 1.5cm;"href="SignUp.html" class="btn btn-black btn-rounded btn-sm px-3">Register</a>
+  
+            
+            </div>
+            <div style="margin-left: 1cm;">
+            <a class="dropdown-item" href="Settings.html">My Account</a>
+            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+            <a class="dropdown-item" href="payment.html">My Orders</a>
+            <a class="dropdown-item" href="register_order.html">Track Order </a>
+            <a class="dropdown-item" href="payment.html">Order Review</a>
+          </div>
+            <div style="text-align: center;">
+              <a style="border-radius: 5px; margin-left: 3cm; margin-bottom:1cm; margin-top:.5cm; margin-right: 3cm; background-color :rgb(255, 132, 50) ;" class="btn" href="#">Logout</a>
+            </div>
+  
+        </button>
+        
+      
+          <a href="cart.html"> <button class="btn" style="border: none;"><i  class="fa fa-shopping-cart" style="font-size: 30px; border-radius: 10px; margin-right: .8cm;  cursor: pointer; color:white;"></i></button></a>
+        <button style="width: 5cm; background-color:rgb(255, 196, 0) ; border: none; border-radius: 5px; padding: 8px; margin-right: 2cm; " > <img src="Images/lock.jpg"  width="30px" style=" float: left; margin-top: .3cm;margin-left: .2cm; border-radius: 10px;"><a href="payment.html">Go to Secure Payments</a></button>
+    </nav>
+    
+  </div>
+  
+  
+  
+  <div class="content"  style=" position: relative; background-color: #2E72FF;">
+  
+        <div class="items" style="  display: flex; justify-content: center;">
+          <div class="dropdown">
+             <a href="electronics.html"> <button class="dropbtn">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button></a>
+                 <div class="dropdown-content" style="z-index: 2;">
+                  <a href="#">TV, Video & Audio</a>
+                  <a href="Mobilephones.html">Mobile Phones & Accesories</a>
+                  <a href="#">Computers & Accesories</a>
+                  <a href="#">Softwares</a>
+                  <a href="#">Speakers & Accesories</a>
+                </div>
+          </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn">HOME & GARDEN <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Cleaning Supplies</a>
+          <a href="#">Dinnnig</a>
+          <a href="#">Kitchen Appiance</a>
+          <a href="#">Interior Decoration</a> 
+          <a href="#">Tools & Hardware</a>
+        </div>
+      </div>
+
+
+  
+      <div class="dropdown">
+        <button class="dropbtn">GROCERIES <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Vegetables</a>
+          <a href="#">Fruits</a>
+          <a href="#">Meat & Fish</a>
+          <a href="#">Snacks</a>
+          <a href="#">Sweets</a>
+          <a href="#">Others</a>
+        </div>
+      </div>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">BEAUTY & HEALTH <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Sports & Outdoors </a>
+          <a href="#">Medical Aids & Supplies</a>
+          <a href="#">Fitness Equipments</a>
+          <a href="#">Personal care Appliances</a>
+          <a href="#">Foods & Nutrition</a>
+          <a href="#">Medical Membership</a>
+        </div>
+      </div>
+
+
+  
+      <div class="dropdown">
+        <button class="dropbtn">CLOTHING <i class="fa fa-caret-down" aria-hidden="true" style=" z-index:1;margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Kids</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Sunglasses</a>
+          <a href="#">Towel</a>
+          <a href="#">Raincoats</a>
+        </div>
+      </div>
+
+ 
+      <div class="dropdown">
+        <button class="dropbtn">KIDS <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Kids</a>
+          <a href="#">Baby Products</a>
+          <a href="#">schools Supplies</a>
+          <a href="#">Toys</a>
+        </div>
+      </div>
+ 
+    
+
+  
+      <div class="dropdown"  >
+        <button class="dropbtn " >CAR CARE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: 1 margin-left: 10px;"></i></button>
+        <div class="dropdown-content"  style="z-index: 2;">
+          <a href="#">Automobile</a>
+          <a href="#">Air Freshners</a>
+          <a href="#">Cleaners</a>
+          <a href="#">Color Polish</a>
+          <a href="#">Lubricants</a>
+          <a href="#">Sprayers</a>
+          <a href="#">Wax</a>
+          <a href="#">Others</a>
+          
+        </div>
+      </div>
+ 
+
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">MORE <i class="fa fa-caret-down" aria-hidden="true" style="z-index: -1; margin-left: 10px;"></i></button>
+        <div class="dropdown-content" style="z-index: 2;">
+          <a href="#">Promotional Items</a>
+          <a href="#">Office Automations</a>
+          <a href="#">Industrial Equipments</a>
+          <a href="#">Books & Stationaries</a>
+          <a href="#">Hobbyist Corner</a>
+          <a href="#">Musical Instruments</a>
+          <a href="#">Party Supplies</a>
+          <a href="#">Travel & Camping</a>
+          
+        </div>
+      </div>
+    
+      </div>
+</div> 
+      
+
+
+<!--Section: Content-->
+  
+      <div style=" display: flex; " >
+
+      <div class="divcon" style=" display: flex; width: 60%; margin-top: 1cm; margin-left: 2.5cm;  background-color: #57a8f875;height: 4cm; border-radius: 5px;">
+
+        <div style=" display: flex; margin-left: 1cm;padding: .75cm; " >
+          </br>
+        <p  style="font-weight: 600; font-size: 38px; color: rgb(255, 255, 255);">Shopping Cart </p>
+        <p style="font-weight: 700;font-size: 45px; margin-left: .5cm; margin-top: -.3cm; color: rgb(255, 255, 255);">2</p>
+        <p style="font-weight: 600; font-size: 38px; margin-left: .5cm; color: rgb(255, 255, 255);">Items</p>
+  
+        </div>
+
+        
+        
+        <div> 
+          <h4 style="margin-top: .5cm;" ><a href="file:///C:/Users/SANDINI/Desktop/Takas.lk%20Version%207th%20Oct/home%20page.html" style="margin-left: 4.3cm; "> Back to Store</a></h4> 
+          <a style=" border-radius: 5px; width: 4cm; margin-top: .5cm; margin-bottom:.5cm; margin-left: 4.3cm;color: rgb(255, 255, 255);  background-color :#2E72FF; float: left;" class="btn" href="#">
+            <b>Buy All</b>
+          </a>
+        </div>
+
+      </div>
+    
+
+
+      <div class="divcon" style=" width: 10cm; height:15cm; text-align: left;  border-radius: 5px; background-color: rgba(240, 238, 238, 0.705);    margin-top: 1cm; margin-left:.6cm; margin-bottom: 2cm; "> 
+           <br>
+
+                    <div>
+                    <dl class="row" style="margin-left: .5cm; margin-right: .5cm;">
+                      <dd class="col-sm-8" style="font-size: 15px;">
+                        Sub Total 
+                      </dd>
+                      <dd  style="text-align: right;" class="col-sm-4">
+                        Rs.176,705
+                      </dd>
+                    </dl>
+    
+                    <dl class="row" style="margin-left: .5cm; margin-right: .5cm;">
+                      <dd class="col-sm-8" style="font-size: 15px;">
+                        Discount Amount(c)
+                      </dd>
+                      <dd style="text-align: right;" class="col-sm-4">
+                        - Rs.2000
+                      </dd>
+                    </dl>
+                  
+    
+                    <dl class="row"style="margin-left: .5cm;color: #2E72FF; margin-right: .5cm;">
+                      <dd class="col-sm-8" style="font-size: 20px;">
+                        <b >Grand Total</b>
+                      </dd>
+                      <dd style="text-align: right;" class="col-sm-4">
+                       <b>Rs.174,705</b> 
+                      </dd>
+                    </dl>
+    
+                  
+                    <div style="display: flex;">
+                    <a style=" border-radius: 5px; width: 5cm; margin-top: .3cm; height: 1.2cm; margin-bottom:.5cm; margin-left: 2.5cm;color: rgb(255, 255, 255);  background-color :rgb(255, 196, 0); float: left;" class="btn" href="#">
+                      <img src=""   alt="" width="30px" style=" float: left; border-radius: 5px;"> <b style="font-size: 20px;">Pay Now</b>
+                    </a>
+                  </div>
+                  <hr>
+    
+               <h5 style="text-align: center; margin: .75cm; font-weight: 600;">Coupon Codes</h5>
+    
+        <p style="margin-left: .75cm; text-align: center;font-weight: 300; margin-right: .75cm;">Enter your coupon code here if you have ...</p> 
+        <input class=" form-control" placeholder="       xxxxxxx" style="width:4cm; margin-left: 3cm; border-radius: 10px;" > </input>
+        <a style=" border-radius: 5px; width: 4cm; margin-top: .5cm; margin-bottom:.5cm; margin-left: 3cm;color: rgb(255, 255, 255);  background-color :rgb(255, 196, 0); float: left;" class="btn" href="#">
+          <b>Add coupon</b>
+        </a>
+      </div>
+    </div>
+  </div>
+      
+      
+      </div>
+  <div style="">
+  <div class="divcon" style=" width: 60%; height:6cm; text-align: left;  border-radius: 5px;    border-width: 3px;   margin-top:-12cm; margin-left: 2.5cm; margin-bottom: 2cm; "> 
+        <img src="Images/tv.jpg"  style="width: 4.5cm; height: 4.5cm; margin-top: .5cm; float: left; margin-left: 1.5cm;" >
+        <div style=" display:flow-root; margin-left: 7cm; width: 8cm; height: 3cm; ">
+          
+          <h5 style="margin-top: 1cm;">Samsung 50" RU7100 mart 4K UHD TV </h5>
+          <p>Warrenty: Seller verified by Takas.lk
+            Warrenty Period: 1 year   </p>
+
+            
+
+          <b style="font-size: 20px;">Rs.170,000 </b>
+       
+        </div>
+
+        <div style=" float: left;  width: 5cm; height: 5cm; margin-top: -2.5cm; margin-left: 11cm;">
+          <a style=" border-radius: 5px; width: 4cm; margin-top: .5cm; margin-bottom:.5cm; margin-left: .5cm;color: rgb(255, 255, 255);  background-color :#2E72FF; float: left;" class="btn" href="#">
+            <b>Buy Now</b>
+          </a>
+          <div style=" float: left; display: flex; margin-top: 1cm;">
+            
+              <input type="number" value="1" aria-label="Search" style="border-radius: 10px; margin-left: .5cm; width: 2cm; background-color: rgb(255, 255, 255);"  class="form-control" >
+              
+              <button  class=" btn dropdown " id="btn" style="border: none; margin-left: .3cm; margin-top: -.2cm;" ><i class="fa fa-trash btn start-btn" style="font-size: 30px; border-radius: 10px; margin-right: 5px; margin-bottom: 0cm; cursor: pointer; color:rgb(0, 0, 0);"></i>
+                
+                  
+            </td>
+          </tr>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+      
+  
+      
+  <div class="divcon" style=" margin-top: -1.5cm; width: 60%; height:6cm; text-align: left;  border-radius: 5px; border-width: 3px;   margin-top:cm; margin-left: 2.5cm; margin-bottom: 2cm; "> 
+   
+    <img src="Images/watch.png"  style="width: 4cm; height: 4cm; margin-top: 1cm; float: left; margin-left: 2cm;" >
+    <div style=" display:flow-root; margin-left: 7cm; width: 8cm; height: 3cm; ">
+      
+      <h5 style="margin-top: 1cm;">iFit Act Smart Watch </h5>
+      <p>Warrenty: Seller verified by Takas.lk
+        Warrenty Period: 1 year   </p>
+
+        
+
+      <b style="font-size: 20px;">Rs.6,705 </b>
+   
+    </div>
+    <div style=" float: left;  width: 5cm; height: 5cm; margin-top: -2.5cm; margin-left: 11cm;">
+      <a style=" border-radius: 5px; width: 4cm; margin-top: .5cm; margin-bottom:.5cm; margin-left: .5cm;color: rgb(255, 255, 255);  background-color :#2E72FF; float: left;" class="btn" href="#">
+        <b>Buy Now</b>
+      </a>
+      <div style=" float: left; display: flex; margin-top: 1cm;">
+        
+          <input type="number" value="1" aria-label="Search" style="border-radius: 10px; margin-left: .5cm; width: 2cm; background-color: rgb(255, 255, 255);"  class="form-control" >
+          
+          <button  class=" btn dropdown " id="btn" style="border: none; margin-left: .3cm; margin-top: -.2cm;" ><i class="fa fa-trash btn start-btn" style="font-size: 30px; border-radius: 10px; margin-right: 5px; margin-bottom: 0cm; cursor: pointer; color:rgb(0, 0, 0);"></i>
+            
+              
+        </td>
+      </tr>
+      </div>
+    </div> 
+    
+    <a></a>
+
+    <a href="info.html" style=" border-radius: 5px; width: 7cm; margin-top: -1cm; margin-bottom:.5cm; margin-left: 26.25cm;color: rgb(255, 255, 255);  background-color :rgb(255, 196, 0); float: left;" class="btn" href="#">
+      <b>Add Delivery Details</b>
+    </a>
+    <a href="register_order.html" style=" border-radius: 5px; width: 7cm;  margin-bottom:1cm; margin-left: 26.25cm;color: rgb(255, 255, 255);  background-color :rgb(255, 196, 0); float: left;" class="btn" href="#">
+      <b>Track orders</b>
+    </a>
+    </div>
+  </div>
+  
+</div>
+
+  </div>
+
+</div>
+
+
+<div style="margin-left: 4cm; margin-right: 4cm;" >
+  <h5 class="word" style="color: dodgerblue; font-size: 22px; " ><span >You May Also Like </span></h5>
+
+</div>
+
+<div class="container my-5 py-5" style="margin-top: -2cm;">
+
+
+  <!--Section: Content-->
+  <section class="text-center">
+
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-3 ">
+
+        <!-- Card -->
+        <div class="card divcon">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" style="width: 120px;" src="Images/YL1.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <p class="mb-1"><a href="" class="font-weight-bold black-text">Oppo A1k</a></p>
+
+            <p class="mb-1"><strong>Rs.29,027</strong></p>
+
+            <div class="amber-text fa-xs mb-1">
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <hr>
+
+            <button type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm; margin-right: .5cm;" class="btn btn-black btn-rounded btn-sm px-3">Buy Now</button>
+            <button type="button"style="background-color:rgb(255, 196, 0); border-radius: 10px;" class="btn btn-outline-black btn-rounded btn-sm px-3 waves-effect">Details</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 ">
+
+        <!-- Card -->
+        <div class="card divcon">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" style="width: 120px;" src="Images/Yl2.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <p class="mb-1"><a href="" class="font-weight-bold black-text">Huawei power Bank </a></p>
+
+            <p class="mb-1"><strong>Rs. 4,275</strong></p>
+
+            <div class="amber-text fa-xs mb-1">
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+
+            <hr>
+
+            <button type="button" style="background-color:rgb(255, 196, 0); border-radius: 5px; width: 2.5cm; margin-right: .5cm;" class="btn btn-black btn-rounded btn-sm px-3">Buy Now</button>
+            <button type="button"style="background-color:rgb(255, 196, 0); border-radius: 10px;" class="btn btn-outline-black btn-rounded btn-sm px-3 waves-effect">Details</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 ">
+
+        <!-- Card -->
+        <div class="card divcon">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" style="width: 120px;" src="Images/YL4.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <p class="mb-1"><a href="" class="font-weight-bold black-text">IFit Classic Watch</a></p>
+
+            <p class="mb-1"><strong>Rs.28,215</strong></p>
+
+            <div class="amber-text fa-xs mb-1">
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+              <i class="fa fa-star"></i>
+            </div>
+
+            <hr>
+
+            <button type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm; margin-right: .5cm;" class="btn btn-black btn-rounded btn-sm px-3">Buy Now</button>
+            <button type="button"style="background-color:rgb(255, 196, 0); border-radius: 10px;" class="btn btn-outline-black btn-rounded btn-sm px-3 waves-effect">Details</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+      </div>
+      <!--Grid column-->
+
+   <!--Grid column-->
+   <div class="col-lg-3 ">
+
+    <!-- Card -->
+    <div class="card divcon">
+
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" style="width: 120px;" src="Images/YL3.jpg"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!-- Card content -->
+      <div class="card-body">
+
+        <p class="mb-1"><a href="" class="font-weight-bold black-text">Spigen Apple Watch</a></p>
+
+        <p class="mb-1"><strong>Rs.5,610</strong></p>
+
+        <div class="amber-text fa-xs mb-1">
+          <i class="fa fa-star" style="color: rgb(255, 127, 41);"></i>
+          <i class="fa fa-star" style="color: rgb(255, 127, 41);"></i>
+          <i class="fa fa-star"style="color: rgb(255, 127, 41);"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+        </div>
+
+        <hr>
+
+        <button type="button" style="background-color:rgb(255, 196, 0); border-radius: 10px; width: 2.5cm; margin-right: .5cm;" class="btn btn-black btn-rounded btn-sm px-3">Buy Now</button>
+        <button type="button"style="background-color:rgb(255, 196, 0); border-radius: 10px;" class="btn btn-outline-black btn-rounded btn-sm px-3 waves-effect">Details</button>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+    </div>
+    <!--Grid row-->
+
+
+
+    
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+<div class="center modal-box">
+  <div class="fa fa-times">
+</div>
+<div class="fa fa-envelope icon1">
+</div>
+<header>Deleted Successfully !</header>
+  <p>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.start-btn').click(function(){
+      $('.modal-box').toggleClass("show-modal");
+      $('.start-btn').toggleClass("show-modal");
+    });
+    $('.fa-times').click(function(){
+      $('.modal-box').toggleClass("show-modal");
+      $('.start-btn').toggleClass("show-modal");
+    });
+  });
+</script>
+
+
+
+ 
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+
+
+
+  const button = document.getElementById("btn");
+  const list = document.getElementById("list");
+
+  list.style.display="none";
+
+  button.addEventListener("click", (event) =>
+  {
+    if(list.style.display=="none"){
+      list.style.display="block"
+    }else{
+      list.style.display="none";
+    }
+   })
+  </script>
+
+ <!-- Footer -->
+ <footer class="page-footer font-small unique-color-dark">
+
+    
+    
+  <div style="background-color: #76BAFF;">
+    <div class="container  " style="margin-top: 1cm;height: 10cm;">
+      <br>
+     <h1 style="color: rgb(0, 0, 0); text-align: center ;"> WHY BUY FROM US</h1> 
+      <!-- Grid row-->
+
+     
+              
+                    <div style="width:18%; float:left; margin-top: 1cm;  ">
+                      <img src="Images/delivery.png"  class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>ISLAND WIDE DELIVERY</b></p>
+                      <P style="text-align: center;">Same day delivering and next day delivering for selected products</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm;margin-top: 1cm;">
+                      <img src="Images/payments.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>SECURE PAYMENT</b></p>
+                      <P style="text-align: center;">Payment secured by Commercial Bank,  Nations Trust Bank & Sampath bank</P>
+                  </div>
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/premium.png" class="rounded mx-auto d-block" alt=""width="50px"style="margin-bottom: 20px;" >
+                      <p style="text-align: center;"><b>PREMIUM PRODUCTS</b></p>
+                      <P style="text-align: center;">Only brand new & Original products</P>
+                  </div>
+             
+                  <div style="width:18% ;float: left; margin-left: .5cm; margin-top: 1cm;">
+                      <img src="Images/cashon.png" class="rounded mx-auto d-block"  alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>CASH ON DELIVERY</b></p>
+                      <P style="text-align: center;">Available for items upto rs.50,000/-</P>
+                  </div>
+
+                  <div style="width:18%; float: left;  margin-left: .5cm; margin-top: 1cm;" >
+                      <img src="Images/insta.png" class="rounded mx-auto d-block" alt="" width="50px" style="margin-bottom: 20px;">
+                      <p style="text-align: center;"><b>EASY INSTALMENTS</b></p>
+                      <P style="text-align: center;">Pay for your orders in monthly instalments, completely online</P>
+                  
+                  </div>
+        
+      </div>
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+
+  
+  
+
+  
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">ABOUT US</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+        <p>
+          <a href="#!">About us</a>
+        </p>
+        <p>
+          <a href="inthenews.html">In the news</a>
+        </p>
+        <p>
+          <a href="#!">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="contactus.html">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">CUSTOMER CENTER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p>
+            <a href="Settings.html">My Account</a>
+          </p>
+          <p>
+            <a href="payment.html">My Order</a>
+          </p>
+          <p>
+            <a href="wishlist.html">Wishlist</a>
+          </p>
+          <p>
+            <a href="Nregister_order.html">Track Order</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">INFO</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 45px;">
+        <p>
+          <a href="faq.html">How to buy Online</a>
+        </p>
+        <p>
+          <a href="#!">Terms and Conditions</a>
+        </p>
+        <p>
+          <a href="payment.html">Payment Methods</a>
+        </p>
+        <p>
+          <a href="">Delivery Details</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 margin-top:20">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Payments Secured By</h5>
+        
+        <div class="DCards">
+        
+          <img src="Images/safekey-logo.png" style="width: 85px; margin-top:20px ">
+        
+          <img src="Images/visa.jpg" style="width: 80px; margin-left:30px; margin-top:20px" >
+        
+          
+        
+      </div>
+      <img src="Images/master.png" style="width: 80px; margin-top: 10px;">
+  
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"   style="background-color: #EAEAEA; color: #3ABAEB" >© 2012-2020 Takas.lk (PVT) Ltd
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
+</body>
+</html>

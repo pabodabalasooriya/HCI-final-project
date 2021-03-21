@@ -1,0 +1,161 @@
+/*---------------------side-menu------------------------------*/
+.side-menu{
+    height: 100%;
+    width: 18%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+.side-menu ul{
+    margin-left: 10px;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    color: black;
+}
+.side-menu ul li:hover{
+    color:blue;
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 250px;
+    margin-left: 10%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #dddddd;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+@media only screen and (max-width: 980px){
+    .side-menu{
+        width: 34%;
+        height: 100%;
+        z-index: 20;
+        top: 10px;
+        position: fixed;
+        font-size: 12px;
+        background: #dddddd;
+        display: none;
+    }
+    .side-menu ul li ul{
+        top: 113px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 20%;
+    }
+    h5{
+        font-size: 14px;
+    }
+}
+/*.top character{
+    align-items: center;
+    display:inline-list-item;
+    padding: 0;
+    margin: auto;
+}*/
+/*-----------------------------Electronics-categories css---------------------------*/
+.Electronics-categories{
+    margin: 50px 0;
+}
+.Electronics-categories img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics-categories img:hover{
+    transform: scale(1.1);
+}
+.Home-categories{
+    margin: 50px 0;
+}
+.Home-categories img{
+    width: 80%;
+    height: 55%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Home-categories img:hover{
+    transform: scale(1.1);
+}
+.Groceries-categories{
+    margin: 50px 0;
+}
+.Groceries-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Groceries-categories img:hover{
+    transform: scale(1.1);
+}
+.Beauty-categories{
+    margin: 50px 0;
+}
+.Beauty-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Beauty-categories img:hover{
+    transform: scale(1.1);
+}
+.Clothing-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Clothing-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Clothing-categories img:hover{
+    transform: scale(1.1);
+}
+.Kids-categories{
+    margin: 50px 0;
+}
+.Kids-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Kids-categories img:hover{
+    transform: scale(1.1);
+}
+.Carcare-categories{
+    margin: 50px 0;
+}
+.Carcare-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Carcare-categories img:hover{
+    transform: scale(1.1);
+}
+section{
+    margin-left: 5px;
+    margin-top: 10px;
+}

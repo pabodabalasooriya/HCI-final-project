@@ -1,0 +1,130 @@
+/*----------------------------Electronics <1,2,3,4,5> CSS---------------------------*/
+.Electronics1-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Electronics1-categories img{
+    width:80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics1-categories img:hover{
+    transform: scale(1.1);
+}
+.Electronics2-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Electronics2-categories img{
+    width: 80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics2-categories img:hover{
+    transform: scale(1.1);
+}
+.Electronics3-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Electronics3-categories img{
+    width: 80%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics3-categories img:hover{
+    transform: scale(1.1);
+}
+.Electronics4-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Electronics4-categories img{
+    width: 90%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics4-categories img:hover{
+    transform: scale(1.1);
+}
+.Electronics5-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.Electronics5-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Electronics5-categories img:hover{
+    transform: scale(1.1);
+}
+
+/*-----------------------------------------Offers page CSS-------------------------------------------------*/
+.offers1-categories{
+    margin: 50px 0;
+}
+.offers1-categories img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.offers1-categories img:hover{
+    transform: scale(1.1);
+}
+.offers2-categories{
+    margin: 50px 0;
+}
+.offers2-categories img{
+    width: 80%;
+    height: 55%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.offers2-categories img:hover{
+    transform: scale(1.1);
+}
+.offers3-categories{
+    margin: 50px 0;
+}
+.offers3-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.offers3-categories img:hover{
+    transform: scale(1.1);
+}
+.offers4-categories{
+    margin: 50px 0;
+}
+.offers4-categories img{
+    width: 60%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.offers4-categories img:hover{
+    transform: scale(1.1);
+}
+.offers5-categories{
+    margin: 50px 0;
+    padding: 10px;
+}
+.offers5-categories img{
+    width: 70%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.offers5-categories img:hover{
+    transform: scale(1.1);
+}
